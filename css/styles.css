@@ -1,0 +1,348 @@
+:root{
+  --body-bg:#F3F5FC;
+  --text-color:#0A3871;
+  --result-white: #FFFFFF;
+  --result-message-color: #343A40;
+  --info-text-simbol: #495057;
+  --btnD-color: #D8DFE8;
+
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  outline: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--body-bg);
+  transition: .3s ease all;
+}
+
+/*tablet*/
+
+h2{
+  font-size: 24px;
+  font-weight: 700;
+  color: #343A40;
+  padding-bottom: 5px;
+}
+p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #495057;
+}
+.container{
+  position: relative;
+  margin: 0px 40px 40px 40px;
+}
+.logo{
+  position: absolute;
+  top: 73.42px;
+}
+/*--------------toggle------------------*/
+#container-toggle{
+  position: relative;
+  top: 80px;
+  left: 600px;
+  border-radius: 25px;
+  width: 80px;
+  height: 40px;
+  box-shadow: inset 4px 4px 5px #5D6363,
+              inset -4px 4px 5px #91918F;
+  cursor: pointer;
+  background-color: #080708;
+}
+.btn-toggle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: unset;
+  width: 40px;
+  height: 40px;
+  transform: scale(0.8);
+  transition: 0.3s ease all;
+  background-color: #12eede;
+  border-radius: 25px;
+  box-shadow: inset 3px 3px 3px #293737,
+              inset -3px 3px 3px #293737;
+}
+#container-toggle.active{
+ 
+  background-color: var(--body-bg);
+}
+.btn-toggle.active{
+  right: 0;
+  left: unset;
+}
+/*--------------toggle------------------*/
+
+.main{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.main-position{
+  position: absolute;
+  top: 240px;
+}
+.main-textinput{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 688px;
+  height: 697px;
+}
+.text-input{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  resize: none;
+  height: 288px;
+  background-color: transparent;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--text-color);
+}
+ .text-input::placeholder {
+    color: var(--text-color);
+    font-family: "Inter";
+  
+  }
+  /*desactiv 'info' --- Enable with 'Display: flex''*/
+  .info {
+  display: none;
+  margin-bottom: 30px;
+    
+  }
+  .info-i {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 12px;
+    color: var(--result-white);
+    background-color: #67808E;
+  }
+  .info-text {
+    font-weight: 400;
+    font-family: "Inter";
+    color: #495057;
+  }
+  .main-textinput-btns {
+ 
+  }
+  .main-btn{
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  padding: 24px;
+  gap: 8px;
+  border: 1px solid;
+  border-color: var(--text-color);
+  font-size: 16px;
+}
+@media (hover: hover) {
+  .btn:hover{
+    transform: scale(1.05);
+  }
+}
+#btn-E{
+  background-color: var(--text-color);
+  color: var(--result-white);
+}
+#btn-D{
+  color: var(--text-color);
+
+}
+#btn-C {
+  color: var(--text-color);
+}
+.main-output{
+background-color: var(--result-white);
+margin-top: 64px;
+padding: 32px;
+border-radius: 32px;
+width: 688px;
+text-align: center;
+box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.06);
+}
+.output-title-p{
+  font-family: "Inter";
+}
+/*img desabilitado en modo tablet*/
+.img-output {
+  display: none;
+}
+   /*ventana y boton copiar desabilitado -- tablet*/
+   /*display toggle 'grid'*/
+.output-text {
+  display: none;
+}
+.output-textarea{
+  width: 100%;
+  height: 180px;
+  margin-bottom: 32px;
+  background-color: transparent;
+  border: none;
+  resize: none;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #495057;
+  
+}
+.output-textarea::placeholder {
+  font-family: "Inter";
+  line-height: 36px;
+}
+.copy {
+  width: 100%;
+}
+.container-footer {
+  position: relative;
+  display: none;
+  bottom: 0;
+  width: 100%;
+  top: 1200px;
+  height: 150px;
+  background-color: var(--text-color);
+  color: var(--result-white);
+}
+/*--------------*Mode-Dark*-----------*/
+.dark{
+  background-color: #111111;
+}
+#h2-d.dk {
+  color: #12eede;
+}
+#p-d.dk {
+  color: var(--body-bg);
+}
+#info-text-id.dk {
+  color: var(--body-bg);
+}
+#textareaInput.dark{
+  color: #12eede;
+}
+#textareaInput.dark::placeholder{
+   color: #12eede;
+}
+#btn-E.dark{
+  background-color: #12eede;
+  color: var(--text-color);
+}
+#btn-D.dk{
+  border: 1px solid #12eede;
+}
+#btn-C.dk{
+  border: 1px solid #12eede;
+}
+#main-output-id.dark{
+  border: 1px solid #12eede;
+  box-shadow: 0px 10px 18px #12eede;
+}
+#textareaOut.dark{
+  color: #12eede;
+}
+/*mobile*/
+@media screen and (max-width: 425px) {
+  .container {
+    margin: 0px 16px 16px 16px;
+  }
+  .logo {
+    top: 23.97px;
+    width: 30.43px;
+    height: 46.18px;
+  }
+  #container-toggle {
+    top: 23.97px;
+    left: 280px;
+  }
+  .main-position {
+    top: 152px;
+  }
+  .main-textinput {
+    width: 343px;
+  }
+ 
+  .main-btn {
+    display: grid;
+  }
+  #btn-E {
+    margin-bottom: 30px;
+  }
+  .main-output {
+    width: 343px;
+    max-height: 595px;
+   
+  }
+
+ 
+}
+
+
+/*desktop*/
+@media screen and (min-width: 1024px) {
+ 
+  .container {
+   
+  }
+  
+  .logo {
+  
+    left: 84px;
+  }
+  #container-toggle {
+    left: 700px;
+  }
+  .main-position {
+    top: 168px;
+    left: 240px;
+    display: flex;
+  }
+  .main-textinput {
+    width: 680px;
+    height: 784px;
+    margin-right: 80px;
+    margin-bottom: 72px;
+  }
+  .main-output {
+    position: absolute;
+    margin-top: 0px;
+    top: -128px;
+    left: 760px;
+    width: 400px;
+    height: 944px;
+  }
+  /*ventana con img  mensaje habilidado -- output-msg*/
+
+.img-output {
+  display: block;
+}
+  .output-msg {
+  
+   margin-top: 243px;
+  }
+  /*--------------*/
+  .img-output {
+    margin-bottom: 32px;
+  }
+  .output-textarea {
+    height: 781px;
+  }
+  /*ventana y boton copiar desabilitado*/
+  .output-text {
+    display: none;
+  }
+  
+}

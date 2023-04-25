@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo"><img src="img/Vector.svg"></div>
+      <div id="container-toggle">
+        <div class="btn-toggle"></div>
+      </div>
+      <div class="main">
+        <div class="main-position">
+          <div class="main-textinput">
+            <textarea class="text-input" id="textareaInput" placeholder="Escribe aqui el texto"></textarea>
+            <div class="main-textinput-btns">
+              <div class="info">
+                <div class="info-i">!</div>
+                <div class="info-text" id="info-text-id">Solo letras minúsculas y sin acento</div>
+              </div>
+              <div class="main-btn">
+                <button class="btn" id="btn-E">Encriptar!</button>
+                <button class="btn" id="btn-D">Desencriptar</button>
+              </div>
+            </div>
+          </div>
+          <div class="main-output" id="main-output-id">
+            <div class="output-msg">
+              <img class="img-output" src="img/Muñeco.svg">
+              <div class="output-title-p">
+                <h2 id="h2-d">Ningún mensaje fue encontrado</h2>
+                <p id="p-d">Ingresa el texto que desea encriptar o desencriptar.</p>
+              </div>
+            </div>
+            <div class="output-text">
+              <textarea class="output-textarea" id="textareaOut"></textarea>
+              <button class="btn copy" id="btn-C">Copiar</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="container-footer">
+        <footer class="f-ooter">
+          <small>Chagllen realizado por Emmanuel Silano</small>
+        </footer>
+      </div>
+    </div>
+  </body>
+  
+  <script src="js/script.js" type="text/javascript"></script>
+</html>
